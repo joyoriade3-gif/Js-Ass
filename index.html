@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- SECTION A -->
+
+   <!-- 1a -->
+    <h3>
+      (Q1) What is a conditional statement in JavaScript? 
+    </h3>
+    <p>
+      conditional statement in JavaScript is the use of either a condition or more than a condition such as if else statement, else if statement or switch statement to process code base on the condition you give the code. it control the flow of program.
+    </p>
+
+    <!-- 1a -->
+     <h3>
+        (Q1b) Example 
+     </h3>
+     <p>
+      Check console
+     </p>
+     <script>
+      let grade = 62;
+      if (grade >= 70) {
+        console.log(`A`);
+      } else if (grade >= 60) {
+        console.log(`B`);
+      } else if (grade >= 50) {
+        console.log(`C`);
+      } else if (grade >= 45) {
+        console.log(`D`);
+      } else {
+        console.log(`Fail`);
+      }
+     </script>
+
+      <!-- 2 -->
+    <h3>
+      (Q2) Explain the difference between if, else if, and else statements. 
+    </h3>
+    <h3>
+      IF statement
+    </h3>
+      <p>
+        if statement is part of the conditional statement but there is a limitation to it. for example  it can not do more than just aa condition (which mean it cannot do a multiple condition).
+      </p>
+    <h3>
+      ELSE IF statement
+    </h3>
+      <p>
+        else if statement is part of the conditional statement with the capaity of doing more than a single condition, (which mean it can do multiple condition). if a condition in this statement did not work it will move to the next condition which the 'IF statement' cannot do.
+      </p>
+    <h3>
+      ELSE statement
+    </h3>
+      <p>
+        else statement is part of all IF & ELSE IF statement because of its work. 
+        its work is that if all the condition in a code are negative or cannot run the code this else statement should run the code without anything affecting it. 
+      </p>
+
+      <!-- 3 -->
+       <h3>
+          (Q3) Write a JavaScript program that checks if a number is positive, negative, or zero. 
+        </h3>
+        <p>
+          Check console
+        </p>
+          <script>
+            let anyNumber = 10;
+              if (anyNumber <  0) {
+                console.log(`This is a negative number`);
+              } else if (anyNumber > 0)  {
+                console.log(`This is a positive number`);
+              } else {
+                console.log(`Zero`);
+              }
+          </script>
+
+        <!-- 4 -->
+        <h3>
+          (Q4) What is a switch statement, and when is it preferred over if-else? 
+        </h3>
+        <h3>
+          SWITCH statement
+        </h3>
+          <p>
+            switch executes the code blocks that matches an expression.
+            switch is often used as a more readable alternative to many if...else if...else statements, especially when dealing with multiple possible values.
+          </p>
+          <p>
+            The switch statement is often preferred over if-else when evaluating a single expression against numerous potential constant values. 
+          </p>
+        <h3>
+          (Q5) What will be the output of the following code?
+        </h3>
+        <p>
+          yes <br>
+          Check console
+          <script>
+            if (10 > 5) {
+              console.log('Yes');
+            } else {
+              console.log('No');
+            }
+          </script>
+        </p>
+
+    <!-- SECTION B -->
+
+    <!-- 6 -->
+      <h3>
+        (Q6) What is a function in JavaScript?
+      </h3>
+      <p>
+        Function is a reusable block of code
+      </p>
+
+    <!-- 7 -->
+      <h3>
+        (Q7) Write a simple function that adds two numbers and returns the result.
+      </h3>
+      <p>
+        Check console
+        <script>
+          function calculation(a, d) {
+            return a + d;
+          }
+          console.log(calculation(3, 3));
+        </script>
+      </p>
+
+      <!-- 8 -->
+      <h3>
+        (Q8) Write a function that checks if a number is even or odd.
+      </h3>
+      <p>
+        Check console
+        <script>
+          let numBer = 15;
+          function number() {
+            if (numBer % 2 === 0) {
+              console.log(`${numBer} is a Even number`);
+            } else {
+              console.log(`${numBer} is a Odd number`)
+            }
+          }
+          console.log(number());
+        </script>
+      </p>
+
+       <!-- 9 -->
+      <h3>
+        (Q9) What are parameters in a function?
+      </h3>
+      <p>
+       parameters are special kinds of variables used as placeholders in a function's definition. (variable name's specified in the function definition).
+      </p>
+
+      <!-- 10 -->
+      <h3>
+        (Q10) Convert number 7  to arrow function and 8 to ternary operators.
+      </h3>
+      <p>
+        Check console
+        <!-- arrow function -->
+        <script>
+          let figure = (a, d) =>  a + d;
+          console.log(figure(3, 3));
+        </script>
+        <!-- ternary operators -->
+        <script>
+            let numBers = 19;
+            console.log(numBers % 2 === 0 ? "even" : "Odd");
+        </script>
+      </p>
+
+      <!-- SECTION c -->
+
+      <!-- PART A -->
+       <!-- 1 -->
+      <h3>
+        (Q1) Write a JavaScript program that compares two numbers and prints the greater one.
+      </h3>
+      <p>
+        Check console
+        <script>
+          let greaterNumber = 30;
+          let lesserNumber = 30;
+          if (greaterNumber > lesserNumber) {
+            console.log(`${greaterNumber}`);
+          } else {
+            console.log(`${lesserNumber}`);
+          }
+        </script>
+      </p>
+        <!-- 2 -->
+        <h3>
+          (Q2) Ask the user for their age and:
+            If age is less than 18 → print "You are a minor."
+            If age is between 18 and 59 → print "You are an adult."
+            Otherwise → print "You are a senior citizen."
+        </h3>
+        <p>
+          Check console
+          <script>
+            let Age = 30;
+            if (Age > 18) {
+              console.log(`You are an adult.`);
+            } else if (Age < 18) {
+              console.log(`You are a minor.`);
+            } else {
+              console.log(`You are a senior citizen.`);
+            }
+          </script>
+        </p>
+      <!-- 3 -->
+      <h3>
+        (Q3) 3.	Create a program that checks whether a number is even or odd.
+      </h3>
+      <p>
+        Check console
+        <script>
+          let Number = 33;
+          if ( Number % 2 === 0) {
+            console.log(`${Number} is a even number`);
+          } else {
+            console.log(`${Number} is a odd number`);
+          }
+        </script>
+      </p>
+    <!-- PART B -->
+     <!-- 4 -->
+      <h3>
+        (Q4) Write a program that assigns a grade based on score:
+      </h3>
+      <p>
+      Check console
+      </p>
+      <script>
+        let gradeProgram = 64;
+        if (grade >= 90) {
+          console.log(`A`);
+        } else if (grade >= 80) {
+          console.log(`B`);
+        } else if (grade >= 70) {
+          console.log(`C`);
+        } else if (grade >= 60) {
+          console.log(`D`);
+        } else {
+          console.log(`F`);
+        }
+      </script>
+
+    <!-- PART C -->
+     <!-- 5 -->
+      <h3>
+        (Q5) Use a switch statement to print the day of the week based on a number (1–7).
+Example: 1 → Monday, 7 → Sunday. 
+      </h3>
+      <p>
+      Check console
+      </p>
+      <script>
+        let week = 1;
+        switch (week) {
+          case 1:
+            console.log("Monday");
+              break;
+          case 2:
+            console.log("Tuesday");
+              break;
+          case 3:
+            console.log("Wednesday");
+              break;
+          case 4:
+            console.log("Thursday");
+              break;
+          case 5:
+            console.log("Friday");
+              break;
+          case 6:
+            console.log("Saturday");
+              break;
+          case 7:
+            console.log("Sunday");
+              break;
+          default:
+            console.log("day of the week ");
+        }
+      </script>
+
+      <!-- 6 -->
+       <h3>
+        (Q6) 6.	Create a program that takes a fruit name and prints: 
+      </h3>
+      <p>
+        Check console
+        <script>
+        let fruit = "Apple";
+        switch (fruit) {
+          case 'Apple':
+            console.log(`Apple is red`);
+              break;
+          case 'Banana':
+            console.log(`Banana is yellow`);
+              break;
+          case 'Orange':
+            console.log(`Orange is orange`);
+              break;
+          default:
+            console.log(`Unknown fruit, if it’s not listed.`);
+        }
+      </script>
+      </p>
+
+
+
+      <!-- PART C -->
+     <!-- 7 -->
+      <h3>
+        (Q7) 7.	Use a ternary operator to check:
+        If a number is greater than 10 → print "Big number"
+        Else → print "Small number"
+      </h3>
+      <p>
+      Check console
+      </p>
+      <script>
+        let greater = 11;
+        console.log(greater >  10 ? "Big number" : "Small number");
+      </script>
+
+      <!-- 7 -->
+      <h3>
+        (Q8) 8.	Write a ternary that checks if a year is leap year or not.
+      </h3>
+      <p>
+      Check console
+      <script>
+        let year = 2024;
+        let leapYear = (year % 4 === 0 && year % 100 === !0) || (year % 400 === 0) ? "Leap Year" : "Not a Leap Year"; 
+        console.log(leapYear);
+      </script>
+      </p>
+
+
+
+<!-- PART E -->
+     <!-- 9 -->
+      <h3>
+        (Q9) Write a small ATM simulation:
+        If balance >= amount, print "Withdrawal successful!"
+        Else → "Insufficient funds!" 
+      </h3>
+      <p>
+      Check console
+        <script>
+          const balance = 2000;
+          let withdrawAmount = 2200;
+          if (balance >= withdrawAmount) {
+            console.log(`Withdrawal successful!`);
+          } else {
+            console.log(`Insufficient funds!`);
+          }
+        </script>
+      </p>
+      
+      <!-- 10 -->
+      <h3>
+        (Q10) Create a program that takes a fruit name and prints: 
+      </h3>
+      <p>
+        Check console
+        <script>
+          let TrafficLight = "Yellow";
+            switch (TrafficLight) {
+              case 'Red':
+                console.log(`Stop`);
+                  break;
+              case 'Yellow':
+                console.log(`Get ready`);
+                  break;
+              case 'Green':
+                console.log(`Go`);
+                  break;
+              default:
+                console.log(`Invalid colour.`);
+            }
+      </script>
+      </p>
+  <script src="style.js"></script>
+</body>
+</html>
